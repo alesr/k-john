@@ -1,2 +1,0 @@
-# motionk
-Motion K - John
