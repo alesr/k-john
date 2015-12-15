@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuvem K</title>
+<!--   <link rel="stylesheet" type="text/css" href="../css/main.css"> -->
+  <link rel="stylesheet" href="../lib/reveal.js-master/css/reveal.css"> <!-- Alterar path  -->
+  <link rel="stylesheet" href="../lib/reveal.js-master/css/theme/simple.css"> <!-- Alterar path  -->
+  <script type="text/javascript" src="../lib/jquery-2.1.4.min.js"></script>
+  <script src="../lib/reveal.js-master/plugin/leap/revealConfig.js"></script>
+  <script src="../js/util.js"></script>
+</head>
+<body>
+  <div id="start_video_message" >
+    <!-- Slide_Inove_circulo -->
+    <img src="../images/slide_simples_gesto.jpg" alt="">
+  </div>
+
+  <video id="video" style="display:none;" width="1920" height="1080" autoplay>
+    <source src="../video/leapMotion.mp4" type="video/mp4">
+  </video>
+
+  <!-- Wrap the entire slide show in a div using the 'reveal' class. -->
+  <div id="reveal" class="reveal" style="display:none;">
+    <!-- Wrap all slides in a single 'slides' class -->
+    <div class="slides">
+    <!--       ALL SLIDES GO HERE Each section element contains an individual slide -->
+      <section>
+        <img  data-src="../images/slides/slide_motion_final.jpg" alt="slide 1">
+      </section>
+      <section>
+        <img  data-src="../images/slides/slide_obrigado_vale.jpg" alt="slide 2">
+      </section>
+      <section>
+        <img  data-src="../images/slides/slide_Contacte_Stand-01.jpg" alt="slide 3">
+      </section>
+      <section>
+        <img  data-src="../images/slides/slide_Inove_formas_comunicacao.jpg" alt="slide 4">
+      </section>
+      <section>
+        <img  data-src="../images/slides/slide_nuvemk.jpg" alt="slide 5">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-01.jpg" alt="slide 6">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-02.jpg" alt="slide 7">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-03.jpg" alt="slide 8">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-04.jpg" alt="slide 9">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-05.jpg" alt="slide 10">
+      </section>
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-06.jpg" alt="slide 11">
+      </section>
+      <!-- Repeat the last slide to exit with style -->
+      <section>
+        <img  data-src="../images/slides/apresentacaoK_Feira-06.jpg" alt="slide 12">
+      </section>
+    </div>
+  </div>
+  <script src="../lib/reveal.js-master/lib/js/head.min.js"></script>
+  <script src="../lib/reveal.js-master/js/reveal.js"></script>
+  <script type="text/javascript">revealConfig();</script>
+  <script>idleTimeout(240000);</script>
+  <script>fadeIn();</script>
+  <script type="text/javascript">
+    Reveal.addEventListener('slidechanged', function(event) {
+      if(event.indexh === 11) {
+        window.open('../html/home.html', '_self');
+      }
+    } );
+  </script>
+</body>
+</html>
